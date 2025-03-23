@@ -53,7 +53,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build docker image
-        run: docker build -t napsterz4/deploy-breast-cancer:v1 .
+        run: docker build -t allanmontesm/tarea:tarea .
 
       - name: Docker push to Dockerhub
-        run: docker push Allan1492/deploy-breast-cancer:v1
+        run: docker push allanmontesm/tarea:tarea
